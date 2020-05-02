@@ -1,4 +1,4 @@
-/* MIS FUENTES - INICIO
+/* CONFIGURACION DE FUENTES - INICIO
 @font-face {
     font-family: 'Roboto';
     src: url('../fonts/roboto/Roboto-Regular.ttf');
@@ -6,13 +6,135 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
-/* MIS FUENTES - FIN*/
+/* CONFIGURACION DE FUENTES - FIN*/
 html{
     font-family: 'Roboto';
+    font-size: 16px;
 }
 
-.contenedor{
+.wrapper{
+    width: 1366px;
+    margin: 0 auto;
+}
+
+/* NAV - INICIO */
+nav{
+    height: 100px;
+    line-height: 100px;
+    vertical-align: middle;
+    position: relative;
+}
+
+nav div{
+    position: absolute;
+    left: 50px;
+}
+
+nav div img{
+    vertical-align: middle;
+}
+
+nav ul{
+    position: absolute;
+    right: 50px;
+}
+
+nav li{
+    margin-left: 40px;
+}
+
+nav li:first-child{
+    font-weight: bold;
+    color: #1F3F68;
+}
+
+nav ul, 
+nav li {
+    display: inline-block;
+}
+
+/* NAV - FIN */
+
+/* HEADER - INICIO */
+header{
+    background-image: url("../images/bannerVector.png"), url("../images/banner.png");
+    background-repeat: no-repeat, no-repeat;
+    height: 250px;
+    line-height: 250px;
+}
+
+header div {
+    vertical-align: middle;
     display: inline-block;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
+    text-align: center;
 }
+
+header div h1{
+    padding: 0 365px;
+    font-size: 2.75rem;
+    line-height: 2.75rem;
+    color: white;
+    margin-bottom: 20px;
+}
+
+header div p{
+    padding: 0 325px;
+    font-size: 1.25rem;
+    line-height: 1.25rem;
+    color: white;
+}
+/* HEADER - FIN */
+
+/* MAIN - INICIO */
+main{
+    padding: 40px 100px;
+}
+
+main > div > input {
+    width: 100%;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #F4F4F4;
+    border: 0;
+}
+
+main > div{
+    position: relative;
+}
+
+main > div > img {
+    position: absolute;
+    top: 18.5px;
+    left: 20px;
+}
+
+main > div input::-webkit-input-placeholder{
+    padding-left: 50px;
+}
+
+main .popular{
+    margin: 10px;
+    margin: 40px 0 20px 0;
+    color: #356EAD;
+}
+
+main .grid-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+}
+
+main .card.principal {
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+main .card.principal .description{
+    display: inline-block;
+    width: 150px;
+}
+
+/* MAIN - FIN */
+
