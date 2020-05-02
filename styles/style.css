@@ -1,0 +1,18 @@
+/* MIS FUENTES - INICIO
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/roboto/Roboto-Regular.ttf');
+}
+*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* MIS FUENTES - FIN*/
+html{
+    font-family: 'Roboto';
+}
+
+.contenedor{
+    display: inline-block;
+    margin: 0 auto;
+    width: 1000px;
+}
